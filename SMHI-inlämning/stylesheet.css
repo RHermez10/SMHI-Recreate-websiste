@@ -1,0 +1,302 @@
+/* Style for both mobile and desktop*/
+
+body {
+    font-family: 'Noto Sans',
+        sans-serif;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.side-meny p,
+a {
+    color: #0c6bc4;
+}
+
+.navigation-below article {
+    display: flex;
+}
+
+.white-content {
+    background-color: white;
+    margin-top: 3rem;
+}
+
+.search-input {
+    border: 1px solid grey;
+    padding: 10px;
+    vertical-align: bottom;
+    padding-right: 10%;
+}
+
+.blue-paragraphs {
+    color: rgb(7, 131, 214);
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.open-button {
+    padding: 10px 20px;
+    color: rgb(7, 131, 214);
+    background-color: transparent;
+    border: 1px solid rgb(7, 131, 214);
+    font-size: 20px;
+}
+
+.open-button:hover {
+    background-color: rgb(7, 131, 214);
+    color: white;
+    cursor: pointer;
+
+}
+
+.weather-section {
+    box-shadow: rgb(245 245 245 / 82%) 2px 2px 2px 2px;
+    margin: 10px;
+    border: 3px solid whitesmoke;
+}
+
+.weather-buttons {
+    display: flex;
+    gap: 7rem;
+    background-color: white;
+    border: transparent;
+}
+
+.border {
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.warning-square {
+    background-color: white;
+    box-shadow: rgb(245 245 245 / 82%) 2px 2px 2px 2px;
+    width: 30%;
+    border: 3px solid whitesmoke;
+    padding: 0 5rem 0 1rem;
+}
+
+.warning-square a {
+    text-decoration: none;
+    color: black;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.grey-footer {
+    background-color: rgb(245, 245, 245);
+    padding: 5rem 0rem;
+}
+
+footer h4 {
+    border-bottom: 1px solid black;
+    width: 80%;
+}
+
+.black-footer {
+    background-color: black;
+    padding: 1rem;
+}
+
+/* style for mobile */
+
+@media screen and (max-width: 999px) {
+    body {
+        margin-left: 1rem;
+    }
+
+    .top-navigation,
+    .navigation-below li,
+    .side-meny ul,
+    .sun-icon,
+    .temprature-info>p,
+    .footer-button {
+        display: none;
+    }
+
+    .navigation-below article {
+        background-color: rgb(196, 196, 196);
+        justify-content: center;
+    }
+
+    .meny-button {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .meny-button button {
+        background-color: rgb(0, 153, 255);
+        color: white;
+        padding: 15px 30px;
+        border: transparent;
+    }
+
+    .weather-buttons {
+        gap: 2rem;
+    }
+
+    .warning-square {
+        width: fit-content;
+    }
+
+    .green {
+        background-color: #eafcd2;
+        padding: 0rem 0rem 1rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .green h2 {
+        background-color: green;
+    }
+
+}
+
+/* style for desktop */
+
+@media screen and (min-width:1000px) {
+
+    .meny-button button,
+    .green {
+        display: none;
+    }
+
+    main {
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-areas: " . . side-meny white-content . . ";
+    }
+
+    .top-navigation {
+        background-color: rgb(3, 3, 56);
+    }
+
+    .top-navigation ul {
+        display: flex;
+        padding: 1rem;
+        margin-left: 5rem;
+    }
+
+    .top-navigation a {
+        text-decoration: none;
+        color: white;
+        margin-right: 1rem;
+    }
+
+    .top-navigation a:hover {
+        text-decoration: underline;
+    }
+
+    .top-navigation li:nth-child(8) {
+        margin-left: 10rem;
+    }
+
+    .search-navigation {
+        padding: 5px;
+    }
+
+    .logo-meny {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .navigation-below ul {
+        display: flex;
+        justify-content: space-between;
+        max-width: 65%;
+        align-items: baseline;
+    }
+
+    .meny-button {
+        flex: 1;
+        margin-left: 5rem;
+    }
+
+    .navigation-below {
+        flex: 6;
+    }
+
+    .warning-sign {
+        justify-content: flex-end;
+        margin: -4rem 6rem 0 0;
+
+    }
+
+    .white-content {
+        grid-area: white-content;
+        padding: 1rem 2rem;
+    }
+
+    .side-meny {
+        grid-area: side-meny;
+    }
+
+    .side-meny ul {
+        width: fit-content;
+        padding: 0;
+        grid-area: side-bar;
+    }
+
+    .side-meny li {
+        border: 1px solid rgb(241, 241, 241);
+        padding: 1rem 5rem 1rem 1rem;
+        background-color: white;
+    }
+
+    .gothenburg {
+        display: flex;
+        align-items: center;
+    }
+
+    .gothenburg h1 {
+        flex: 1;
+    }
+
+    .blue-paragraphs {
+        width: 70%;
+    }
+
+    .temprature-info {
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+        margin-right: 4rem;
+    }
+
+    .grey-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .warning-wrapper {
+        display: flex;
+    }
+
+    .a-article {
+        margin-left: 5rem;
+    }
+
+    .b-article {
+        margin-right: 5rem;
+    }
+
+    .footer-button {
+        background-color: rgb(48, 48, 48);
+        color: white;
+        border: transparent;
+        padding: 1rem;
+        font-size: 16px;
+        margin-left: 60rem;
+    }
+
+}

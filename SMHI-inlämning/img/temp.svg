@@ -1,0 +1,8 @@
+ <svg 
+ viewBox="0 0 24 24" width="24" height="24" class="  auIcon auIcon24 " focusable="false" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18.5" cy="5.5" r="2.5"></circle>
+                            <path
+                                d="M14 11.69V8A5 5 0 004 8v3.69a6 6 0 00-.83 4.74A6 6 0 009 21a6 6 0 005-9.31zM9 19a4.56 4.56 0 01-.89-.09 4 4 0 01-3-2.93 4 4 0 01.56-3.19l.33-.5V8a3 3 0 016 0v4.29l.33.5A4 4 0 019 19z">
+                            </path>
+                            <path d="M10 13.28V9H8v4.28A2 2 0 007 15a2 2 0 004 0 2 2 0 00-1-1.72z"></path>
+                        </svg>
